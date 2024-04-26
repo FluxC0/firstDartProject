@@ -31,7 +31,6 @@ class Math {
     return value1 - value2;
   }
   Future<num> addThenSubtract() async {
-    num sum = await addValues();
     await Future.delayed(Duration(seconds: 2));
     var newDiff = await subtractValues();
     return newDiff;
